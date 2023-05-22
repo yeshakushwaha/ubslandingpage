@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+}
+
+/****************************************
+ *********** Fixed Icon CSS ************/
+ .s-soft {
+    position: fixed;
+    top: 80%;
+    right: -149px;
+    z-index: 1000;
+    transition: all linear 0.8s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.s-soft:hover{
+    right: 0;
+}
+
+.s-soft a:first-child {
+ border-radius: 0 5px 0 0;
+}
+
+.s-soft a:last-child {
+ border-radius: 32px 0 0 32px;
+}
+
+.s-item {
+ display: block;
+ width: 200px;
+ height: 60px;
+ color: white;
+ font-size: 16px;
+ line-height: 60px;
+ text-align: center;
+ transition: all linear 0.2s;
+ text-decoration: none;
+}
+
+.s-item:hover {
+   font-size: 14px;
+   color: #fff;
+
+}
+#so-open {
+    position: fixed;
+    top: 100px;
+    left: -90px;
+    border-radius: 0 30px 30px 0;
+    transition: all linear 0.2s;
+}
+
+.user_icon{
+   width: 21px;
+   margin-left: 20px;
+}
+
+.print {
+    background-color: #1c3569;
+}
+.pinterest {
+    background-color: #bd081c;
+}
+.linkedin {
+    background-color: #0e76a8;
+}
+.instagram {
+    background-color: #c32aa3;
+}
+.so-collapse {
+    left: -60px;
+}
+
+/* Modal */
+.bg-bodyy{
+   padding: 1rem 3rem 1rem 3rem;
+}
+
+.form_txt{
+   font-size: 14px;
+}
+
+.control_bg{
+   font-size: 13px;
+   padding: 0.4rem 0.8rem;
+}
+
+.form-dialog-box{
+   margin-top: 4rem;
+}
+
+.form-bg{
+   background-color: #1c3569;
+   color: #fff;
+   text-align: center;
+   display: block;
+   border-bottom-left-radius: 22px;
+   border-bottom-right-radius: 22px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.footer-bg{
+   display: block;
+   border-top: none;
+   padding: 0 0 30px 45px;
+}
+
+.form-bg{
+   padding: 24px 30px 24px 30px;
+}
+
+.submit_btn{
+   background: #1c3568;
+   border: none;
+}
+
+.submit_btn:hover{
+   background: #1c3568;
+}
+
+.cancel_btn{
+   background: transparent;
+   border: 2px solid #1c3569;
+   color: #1c3568;
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.cancel_btn:hover{
+   background: transparent;
+   border: 2px solid #1c3569;
+   color: #1c3568;
+}
+
+.robot-form{
+  margin-top: 1rem;
+}
+
+.robot-details{
+    font-size: 13px;
+}
+
+/****************************************
+ *********** Top Header CSS ************/
+
+ .navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+.navbar-logo-centered .navbar-nav .nav-link{
+    padding: .5em 1em;
+}
+
+.navbar-toggler{
+   background: transparent;
+   border: 2px solid #fff;
+}
+
+.mid-logo{
+  width: 220px;
+  margin: 5px 0 0 0;
+}
+
+.container-custom{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item{
+   margin: 0 0 0 2rem;
+}
+
+.mylogo{
+   margin: -15px 3rem 0 3rem;
+}
+
+@media (max-width: 787px){
+	.mid-logo{
+       width: 180px;
+       margin-top: -13px;
+   }
+}
+
+
+/****************************************
+ *********** Banner CSS ************/
+ #top-banner{
+     background: url(../images/banner.png) no-repeat;
+     background-size: cover;
+     background-position: top center;
+     height: 91vh;
+     margin-top: -60px;
+ }
+
+ .top-banner h1{
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    padding: 8rem 0 0 0;
+    font-weight: 400;
+}
+
+.top-banner .bold_txt{
+	font-weight: 700;
+}
+
+.top-banner p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+    padding: 0 20rem 0 20rem;
+    letter-spacing: 0.2px;
+}
+
+.dots_img img{
+	margin-top: 15rem;
+    width: 100px;
+    margin-left: 4rem;
+}
+
+@media (max-width: 787px){
+  #top-banner{
+   height: 75vh;
+}
+.top-banner h1{
+   font-size: 30px;
+}
+.top-banner p{
+   padding: 0;
+   font-size: 14px;
+}
+}
+
+ /****************************************
+ *********** About CSS ******************/
+
+ .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+     color: #000;
+     background: #769a4926;
+     border-radius: 2rem;
+     width: 30rem;
+     text-align: left;
+     margin-left: 2rem;
+ }
+
+ .side-line .active{
+    position: relative;
+}
+
+.side-line .active:before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: #1c3569;
+    left: -40px;
+    border-radius: 50%;
+    top: 25px;
+}
+
+.nav-pills .nav-link, .nav-pills .show>.nav-link {
+	color: #000;
+    width: 30rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+
+.about-slider-box{
+	border-radius: 2rem;
+    width: 28rem;
+    text-align: left;
+    padding: 1rem 0rem 0rem 2rem;
+}
+
+.about-slider-box h2{
+  font-size: 18px;
+  font-weight: 700;
+  color: #21407C;
+}
+
+.about-slider-box p{
+	font-size: 13px;
+    color: #000;
+    line-height: 22px;
+}
+
+.about-box-one img{
+	width: 40rem;
+    margin: 5rem 2rem 2rem 5rem;
+    max-width: 100%;
+}
+
+.side-line {
+    border-left: 5px solid #ebf0e4;
+    border-radius: 5px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #192f5c;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 6.7rem;
+}
+
+.mobile-btn h2{
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #1e346f;
+}
+
+.accordion-body p{
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+@media(max-width:787px){
+    .about-box-one img{
+        width: 100%;
+        margin: 0;
+    }
+
+    .mobile-accordion{
+        margin-top: 60px;
+    }
+
+    .mobile-accordion img{
+        width: 100%;
+    }
+
+    .mobile-btn{
+        font-size: 12px;
+        color: #000 !important;
+        line-height: 18px;
+        background: #ecf1e5 !important;
+    }
+
+    .why-universal img{
+        margin-left: -12px;
+    }
+
+    .universal-university{
+        width: 100% !important;
+    }
+
+    .cta_btn img{
+        max-width: 250px !important;
+    }
+
+    .footer-form{
+        margin-left: 0 !important;
+    }
+
+    .social-media-icons{
+        float: left !important;
+    }
+
+    .main-footer .copyright{
+        font-size: 11px !important;
+    }
+
+    .mob-list{
+        font-size: 11px !important;
+    }
+    .bottom_logo{
+        margin-left: 0.5rem !important;
+    }
+
+    .footer-logo-bgg img{
+        margin-bottom: 30px;
+    }
+
+    .pursue-passion{
+        justify-content: center;
+    }
+
+    .legacy{
+        margin-top: 10rem !important;
+    }
+    .marketing{
+        margin-top: 5px;
+    }
+
+    .side-border{
+        margin-bottom: 90px;
+    }
+
+    .metrics-wrap{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 25px 0 40px 0;
+    }
+
+    #admission-cta{
+        margin: 0 !important;
+    }
+
+    .passion_details h5{
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-box img{
+        width: 95px !important;
+    }
+}
+
+ /****************************************
+ *********** Metrics CSS ******************/
+ #metrics{
+     background: linear-gradient(-180deg, #284d8d 70%, #456a74);
+     margin: 4rem 0px 4rem -18px;
+     padding: 5rem 8rem 1.4rem 8rem;
+     color: #fff;
+ }
+
+ .metrics_btn{
+  margin: 0 1rem 0 2rem;
+}
+
+.blur-bg{
+	background: #ffffff26;
+    display: inline-block;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 21px;
+    font-weight: 600;
+    width: 130px;
+    text-align: center;
+    margin-left: 1.5rem;
+    height: 55px;
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default{
+    font-size: 21px;
+    text-align: center;
+}
+
+.digit-value{
+    font-size: 21px;
+    margin-left: 5px;
+}
+
+.metrics_btn p{
+    font-size: 12px;
+    width: 8rem;
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-top: 8px;
+}
+
+/***********************************************
+*********** Universal AI CSS ******************/
+#universal{
+   margin-top: 6rem;
+   margin-bottom: 6rem;
+}
+
+.why-universal img{
+    margin-left: -10px;
+}
+
+.universal-university{
+   width: 40rem;
+   padding: 0 0 0 3rem;
+}
+
+.universal-university h2 {
+    color: #21407C;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins';
+}
+
+.universal-university p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 2rem;
+}
+
+.universal-university h5{
+   font-size: 26px;
+   font-weight: 600;
+   color: #21407C;
+   line-height: 35px;
+   margin-bottom: 1.5rem;
+}
+
+.universal-university ul{
+   border-left: 5px solid #eee;
+}
+
+.universal-university ul li{
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 1.5rem;
+    list-style: url("../images/shape.png");
+    list-style-position: outside;
+    margin-left: -1.3rem;
+    padding-left: 1.5rem;
+}
+
+.scrolling-area {
+    max-width: 100%;
+    overflow: auto;
+    padding: 1rem;
+    background: white;
+    height: 30rem;
+    position: relative;
+    left: -10px;
+}
+
+.scrolling-element-inside {
+  direction: ltr;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#style-1::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: transparent;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: none;
+    background-color: transparent;
+}
+
+/****************************************
+*********** Passion CSS *********************/
+#passion{
+   margin-bottom: 8rem;
+}
+
+
+.pursue h2{
+   text-align: center;
+   color: #2B54A3;
+   font-size: 30px;
+   font-weight: 600;
+}
+
+.pursue h3{
+   text-align: center;
+   color: #58B377;
+   font-size: 32px;
+   font-weight: 600;
+   margin-bottom: 4rem;
+}
+
+.passion_details{
+    width: 308px;
+}
+
+.passion_details.active .side-border{
+    display: block;
+    transition: 0.8s ease-in-out;
+    opacity: 1;
+}
+
+.passion_details h5{
+    background: #2B54A3;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    border-radius: 2rem;
+    margin-left: 10px;
+}
+
+.passion_details ul li h6{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2b54a3;
+    margin-top: 2rem;
+}
+
+.passion_details ul li p{
+    font-size: 13px;
+    margin-bottom: 0.8rem;
+}
+
+.passion_details ul li{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: -3rem;
+    list-style: url(../images/shape-01.png);
+    list-style-position: outside;
+    margin-left: -21px;
+    padding-left: 0rem;
+    padding-top: 21px;
+}
+
+.side-border{
+    border-left: 4pxs solid #eee;
+    margin-left: 20px;
+    margin-top: -33px;
+}
+
+.side-border{
+    border-left: 4px solid #eee;
+}
+
+.circle_icon img{
+   position: absolute;
+   width: 3.5rem; 
+   margin: -0.5rem 0rem 0rem 0rem;  
+}
+.side-border {
+    display: none;
+    width: 270px;
+    opacity: 0;
+}
+
+
+/****************************************
+*********** CTA CSS *********************/
+#admission-cta{
+    background: url(../images/cta-bg.png) no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.cta_btn p{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.cta_btn img{
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 5rem;
+}
+
+/************************************************
+*********** Logo Slider CSS *********************/
+.award-icon{
+   background: #eee;
+   padding: 3rem 2rem 3rem 3rem;
+   width: 370px;
+   border-top-right-radius: 2rem;
+   border-bottom-right-radius: 2rem;
+   margin: 0 0 0 -1rem;
+}
+
+.award-icon h5{
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    font-size: 19px;
+    font-weight: 600;
+    color: #1c3569;
+    line-height: 24px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+}
+100% {
+    transform: translateX(calc(-250px * 7));
+}
+}
+.slider {
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100%;
+  width: 250px;
+}
+
+.slide img{
+   width: 125px;
+   margin-top: 2rem;
+   margin-left: 15rem;
+}
+
+/**************************************
+********* Footer Logo CSS ************/
+#footer-logo{
+   background: url('../images/footer-logo-bg.png') no-repeat;
+   background-size: cover;
+   margin-top: 2rem;
+   width: 100%;
+   height: auto;
+}
+
+.legacy{
+   margin-top: 8rem;
+   display: block;
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: 30px;
+   font-weight: 600;
+   color: #2B54A3;
+}
+
+.text-green{
+   color: #58B377;
+   font-size: 35px;
+   line-height: 45px;
+}
+
+.ribon{
+   width: 275px;
+   margin-top: -25px;
+   margin-bottom: 30px;
+}
+
+.footer-logo-box h3{
+   text-align: center;
+   font-size: 16px;
+   font-weight: 600;
+   color: #2b54a3;
+   margin-bottom: 2.8rem;
+}
+
+.footer-logo-box img{
+   width: 150px;
+   margin-bottom: 3rem;
+}
+
+.marketing{
+   border-right: 1px solid #eeeeee8f;
+}
+.logo-pd{
+   padding-bottom: 8rem;
+}
+
+/**************************************
+********* Main Footer CSS ************/
+footer {
+    padding: 4em 0;
+}
+.footer-logo-bgg img{
+   width: 220px;
+}
+
+.main-footer {
+    background: url(../images/footer-bg.png) no-repeat;
+    font-size: 14px;
+    background-color: #1b3363;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+.main-footer a {
+    color: #f17e7e;
+}
+.main-footer .footer-heading {
+    font-size: 12px;
+    color: #769a49;
+    font-weight: 700;
+}
+.main-footer .footer-heading-bgg{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-details{
+    font-size: 12px;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.location i{
+    color: #769A49;
+    margin-right: 0.3rem;
+}
+
+.bottom_logo{
+    width: 75px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.social-media-icons{
+    float: right;
+}
+
+.social-icons{
+    margin: 0 0.5rem 0 0.5rem;
+    width: 15px;
+}
+
+.footer-form{
+    margin-left: 7rem;
+}
+
+.main-footer .copyright {
+    color: #fff;
+    margin-top: 1rem;
+}
+.main-footer .list-unstyled li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+.main-footer .subscribe-form .form-group {
+    position: relative;
+    margin-bottom: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 45px;
+}
+.main-footer .subscribe-form .form-group input {
+    background: #fff !important;
+    border: none !important;
+    outline: none !important;
+    color: #000 !important;
+    font-size: 14px;
+    border-radius: 0;
+}
+.main-footer .subscribe-form .form-group input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(0, 0, 0, 0.3) !important;
+}
+.main-footer .subscribe-form .form-group input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(0, 0, 0, 0.3) !important;
+}
+.main-footer .subscribe-form .form-group input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(0, 0, 0, 0.3) !important;
+}
+.main-footer .subscribe-form .form-group input:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(0, 0, 0, 0.3) !important;
+}
+.main-footer .subscribe-form .form-group input:focus {
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.main-footer .subscribe-form .form-group .submit {
+    color: #fff !important;
+    display: block;
+    width: 130px;
+    height: 45px;
+    font-size: 14px;
+    background: #769A49 !important;
+    border: none;
+    border-radius: 0;
+    margin-left: 0.5rem;
+}
+.main-footer .subscribe-form .form-group .submit:hover,
+.main-footer .subscribe-form .form-group .submit:focus {
+    text-decoration: none !important;
+    outline: none !important;
+}
+.main-footer .subscribe-form .icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.8);
+}
+.main-footer .ftco-footer-social li a {
+    color: #f17e7e;
+}
+
